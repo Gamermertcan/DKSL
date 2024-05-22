@@ -1,4 +1,4 @@
-function get(dksl = example_dksl, take = 'main') {
+export function get(dksl = example_dksl, take = 'main') {
   if (dksl.startsWith('__dksl__')) {
     let startIdx = dksl.indexOf('_' + take + '_') + take.length + 1;
     let endIdx = dksl.indexOf('_-' + take + '_');
